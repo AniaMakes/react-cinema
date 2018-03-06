@@ -20,7 +20,8 @@ class Search extends React.Component{
 	handleSubmit(event) {
 		console.log(this.state);
 		event.preventDefault();
-		alert('submit clicked');
+		const searchQuery = this.state;
+		this.props.receiver(searchQuery);
 	}
 
 
