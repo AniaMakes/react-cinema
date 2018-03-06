@@ -1,5 +1,6 @@
 import React from 'react';
-import Button from './Button';
+import Header from './containers/Header';
+import Main from './containers/Main';
 
 class App extends React.Component {
   constructor(){
@@ -9,7 +10,8 @@ class App extends React.Component {
   render(){
     return (
       <div>
-        <Button />
+        <Header />
+        <Main />
       </div>
     )
   }
