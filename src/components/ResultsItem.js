@@ -1,19 +1,61 @@
 import React from 'react';
+import FilmDetails from './FilmDetails';
 
 class ResultsItem extends React.Component{
 	constructor(props){
 		super(props)
+
+		this.state = {
+			filmData: '',
+			detailsShown: false
+		}
+
+		this.getMoreData = this.getMoreData.bind(this);
+		this.checkDetailsShown = this.checkDetailsShown.bind(this);
+	}
+
+	checkDetailsShown(event) {
+		console.log("I'm inside checkDetailsShown");
+		if (!this.state.filmData) {
+			this.getMoreData(this.props.imdbID);
+		} else {
+			if (this.state.detailsShown) {
+					this.setState({detailsShown: false})
+				}
+				else{
+					this.setState({detailsShown: true})
+				}
+		}
+
+	}
+
+	getMoreData(imdbid) {
+		fetch('http://www.omdbapi.com/?apikey=674ff9&i=' + imdbid)
+		.then(results => results.json())
+		.then(data => {
+			this.setState({
+				filmData: data,
+				detailsShown: true
+			})
+		})
+		.catch(err => console.log(err))
+		
 	}
 
 	render(){
+
 
 		const {title, imdbID, year, posterURL} = this.props;
 
 		return(
 			<article className='results-item' id={imdbID}>
-				<img src={posterURL} />
+				<img width="150" height="250" src={posterURL} />
 				<h3 className='item-title'>{title}</h3>
 				<p className='item-year'>{year}</p>
+				<button
+					onClick={this.checkDetailsShown}
+				> More </button> 
+				<FilmDetails detailsShown={this.state.detailsShown} data={this.state.filmData}/>
 			</article>
 		);
 	}
