@@ -8,10 +8,10 @@ class FilmDetails extends React.Component {
 	render () {
 		return (
 			<div className='film-details'
-				style={this.props.detailsShown ? {display: 'block'} : {display: 'none'}}
+				className={this.props.detailsShown ? 'display-details' : 'hide-details'}
 			>
-				<p className='film-runtime'> {this.props.data.Runtime} </p>
-				<p className='film-genre'> {this.props.data.Genre} </p>
+				<p className='film-runtime'> <b>Runtime:</b> {this.props.data.Runtime} </p>
+				<p className='film-genre'> <b> Genre:</b> {this.props.data.Genre} </p>
 				<p className='film-plot'> {this.props.data.Plot}</p>
 			</div>
 		)

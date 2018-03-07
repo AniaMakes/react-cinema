@@ -8,7 +8,8 @@ html, body {
 	color: #ffffff;
 }
 
-.main-content {
+.main-header {
+	font-size: 1.3rem;
 }
 
 .search-block {
@@ -77,20 +78,24 @@ html, body {
 }
 
 .results-item {
-	display: flex;
-	justify-content: space-between;
 	margin: 1rem;
 	background-color: #ffffff;
 	color: #000000;
 }
+.results-wrapper {
+	display: flex;
+	justify-content: space-between;
+}
+
+.item-poster {
+	width: 100px;
+	height: 150px;
+}
+
 .item-info-wrapper {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-}
-.item-poster {
-	width: 100px;
-	height: 150px;
 }
 
 .item-title {
@@ -99,6 +104,13 @@ html, body {
 	text-align: center;
 }
 
+.display-details {
+	display: block;
+}
+
+.hide-details {
+	display: none;
+}
 
 
 

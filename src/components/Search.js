@@ -32,7 +32,7 @@ class Search extends React.Component{
 					className='search-form'
 					onSubmit={this.handleSubmit}
 				> 	
-					<label className="search-label"htmlFor='search-input'>Search By Name</label>
+					<label className="search-label" htmlFor='search-input'>Search By Name</label>
 					<div className="search-bar">
 						<input 
 							onChange={this.handleChange}

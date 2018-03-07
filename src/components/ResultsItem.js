@@ -15,7 +15,6 @@ class ResultsItem extends React.Component{
 	}
 
 	checkDetailsShown(event) {
-		console.log("I'm inside checkDetailsShown");
 		if (!this.state.filmData) {
 			this.getMoreData(this.props.imdbID);
 		} else {
@@ -49,14 +48,16 @@ class ResultsItem extends React.Component{
 
 		return(
 			<article className='results-item' id={imdbID}>
-				<img className='item-poster' src={posterURL} />
-				<div className='item-info-wrapper'>
-					<h3 className='item-title'>{title}</h3>
-					<p className='item-year'>{year}</p>
-					</div>
-				<button
-					onClick={this.checkDetailsShown}
-				> More </button> 
+				<div className='results-wrapper'>
+					<img className='item-poster' src={posterURL} />
+					<div className='item-info-wrapper'>
+						<h3 className='item-title'>{title}</h3>
+						<p className='item-year'>{year}</p>
+						</div>
+					<button
+						onClick={this.checkDetailsShown}
+					> More </button> 
+				</div>
 				<FilmDetails detailsShown={this.state.detailsShown} data={this.state.filmData}/>
 			</article>
 		);

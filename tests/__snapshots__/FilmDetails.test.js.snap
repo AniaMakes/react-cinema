@@ -1,0 +1,106 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Film Details Item films details item is rendered 1`] = `
+<div
+  className="display-details"
+>
+  <p
+    className="film-runtime"
+  >
+     
+    <b>
+      Runtime:
+    </b>
+     
+    106m
+     
+  </p>
+  <p
+    className="film-genre"
+  >
+     
+    <b>
+       Genre:
+    </b>
+     
+    comedy
+     
+  </p>
+  <p
+    className="film-plot"
+  >
+     
+    plot here
+  </p>
+</div>
+`;
+
+exports[`Film Details Item films details item with 'display-details' classname is rendered 1`] = `
+<div
+  className="display-details"
+>
+  <p
+    className="film-runtime"
+  >
+     
+    <b>
+      Runtime:
+    </b>
+     
+    106m
+     
+  </p>
+  <p
+    className="film-genre"
+  >
+     
+    <b>
+       Genre:
+    </b>
+     
+    comedy
+     
+  </p>
+  <p
+    className="film-plot"
+  >
+     
+    plot here
+  </p>
+</div>
+`;
+
+exports[`Film Details Item films details item with 'hide-details' classname is rendered 1`] = `
+<div
+  className="hide-details"
+>
+  <p
+    className="film-runtime"
+  >
+     
+    <b>
+      Runtime:
+    </b>
+     
+    106m
+     
+  </p>
+  <p
+    className="film-genre"
+  >
+     
+    <b>
+       Genre:
+    </b>
+     
+    comedy
+     
+  </p>
+  <p
+    className="film-plot"
+  >
+     
+    plot here
+  </p>
+</div>
+`;
