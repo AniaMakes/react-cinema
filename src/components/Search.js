@@ -11,6 +11,7 @@ class Search extends React.Component{
 		this.handleChange = this.handleChange.bind(this);
 		this.handleSubmit = this.handleSubmit.bind(this);
 	}
+
 	handleChange(event) {
 		this.setState({
 			value: event.target.value
@@ -18,9 +19,8 @@ class Search extends React.Component{
 	}
 
 	handleSubmit(event) {
-		console.log(this.state);
 		event.preventDefault();
-		const searchQuery = this.state;
+		const searchQuery = this.state.value;
 		this.props.receiver(searchQuery);
 	}
 

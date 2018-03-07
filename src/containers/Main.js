@@ -5,14 +5,25 @@ import Results from '../components/Results';
 class Main extends React.Component{
 	constructor(props) {
 		super(props);
+		this.state = {
+			data: [],
+			resultsDisplayed: false,
+		}
 
 		this.getData = this.getData.bind(this);
 	}
 
 	getData(searchQuery) {
-		fetch('http://www.omdbapi.com/?apikey=674ff9&s=day')
+		console.log(searchQuery);
+		console.log(typeof(searchQuery));
+		fetch(`http://www.omdbapi.com/?apikey=674ff9&s=${searchQuery}`)
 			.then(results => results.json())
-			.then(data => console.log(data))
+			.then(data => {
+				this.setState({
+					data: data.Search
+				})
+				console.log(this.state.data);
+			})
 			.catch(err => console.log(err))
 	}
 
@@ -20,7 +31,7 @@ class Main extends React.Component{
 		return(
 			<div>
 				<Search receiver={this.getData}/>
-				<Results />
+				<Results results={this.state.data}/>
 			</div>
 		)
 	}
