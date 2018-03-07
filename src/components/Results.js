@@ -25,7 +25,9 @@ class Results extends React.Component{
 		return(
 			<section className='results'>
 				<h2>Results</h2>
+
 				{resultsComponentsArray}
+
 			</section>
 		);
 	}

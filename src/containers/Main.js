@@ -29,7 +29,7 @@ class Main extends React.Component{
 
 	render(){
 		return(
-			<div>
+			<div className="main-content">
 				<Search receiver={this.getData}/>
 				<Results results={this.state.data}/>
 			</div>

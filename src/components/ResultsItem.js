@@ -49,9 +49,11 @@ class ResultsItem extends React.Component{
 
 		return(
 			<article className='results-item' id={imdbID}>
-				<img width="150" height="250" src={posterURL} />
-				<h3 className='item-title'>{title}</h3>
-				<p className='item-year'>{year}</p>
+				<img className='item-poster' src={posterURL} />
+				<div className='item-info-wrapper'>
+					<h3 className='item-title'>{title}</h3>
+					<p className='item-year'>{year}</p>
+					</div>
 				<button
 					onClick={this.checkDetailsShown}
 				> More </button> 

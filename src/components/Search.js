@@ -27,23 +27,28 @@ class Search extends React.Component{
 
 	render(){
 		return(
-			<form 	
-				className='search-form'
-				onSubmit={this.handleSubmit}
-			>
-				<label htmlFor='search-input'>Search By Name</label>
-				<input 
-					onChange={this.handleChange}
-					value={this.state.value}
-					type='text' 
-					id='search-input'
-					className='search-input'
-					name='search-input' 
-				/>
-				<button className='submit-btn' type='submit'>
-					Find
-				</button>
-			</form>
+			<section className="search-block">
+				<form 	
+					className='search-form'
+					onSubmit={this.handleSubmit}
+				> 	
+					<label className="search-label"htmlFor='search-input'>Search By Name</label>
+					<div className="search-bar">
+						<input 
+							onChange={this.handleChange}
+							value={this.state.value}
+							type='text' 
+							id='search-input'
+							className='search-input'
+							name='search-input' 
+							/>
+						
+						<button className='submit-btn' type='submit'>
+							Find
+					</button>
+					</div>
+				</form>
+			</section>
 		);
 	}
 }
