@@ -1,0 +1,194 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Results Results is rendered 1`] = `
+<section
+  className="results"
+>
+  <h2>
+    Results
+  </h2>
+  <article
+    className="results-item"
+    id="tt0119137"
+  >
+    <div
+      className="results-wrapper"
+    >
+      <img
+        className="item-poster"
+        src="https://images-na.ssl-images-amazon.com/images/M/MV5BZDlkOTA0OTUtOThmMi00NTMyLTg0NDgtZWZiYmRjZWI4MDY4XkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg"
+      />
+      <div
+        className="item-info-wrapper"
+      >
+        <h3
+          className="item-title"
+        >
+          Flubber
+        </h3>
+        <p
+          className="item-year"
+        >
+          1997
+        </p>
+      </div>
+      <button
+        onClick={[Function]}
+      >
+         More 
+      </button>
+    </div>
+    <div
+      className="hide-details"
+    >
+      <p
+        className="film-runtime"
+      >
+         
+        <b>
+          Runtime:
+        </b>
+         
+         
+      </p>
+      <p
+        className="film-genre"
+      >
+         
+        <b>
+           Genre:
+        </b>
+         
+         
+      </p>
+      <p
+        className="film-plot"
+      >
+         
+      </p>
+    </div>
+  </article>
+  <article
+    className="results-item"
+    id="tt0057518"
+  >
+    <div
+      className="results-wrapper"
+    >
+      <img
+        className="item-poster"
+        src="https://images-na.ssl-images-amazon.com/images/M/MV5BMTM2Zjk4MDgtYjMzYi00NzA3LWIxODktODcwYjVmOWQ1YzU2XkEyXkFqcGdeQXVyNjE5MjUyOTM@._V1_SX300.jpg"
+      />
+      <div
+        className="item-info-wrapper"
+      >
+        <h3
+          className="item-title"
+        >
+          Son of Flubber
+        </h3>
+        <p
+          className="item-year"
+        >
+          1963
+        </p>
+      </div>
+      <button
+        onClick={[Function]}
+      >
+         More 
+      </button>
+    </div>
+    <div
+      className="hide-details"
+    >
+      <p
+        className="film-runtime"
+      >
+         
+        <b>
+          Runtime:
+        </b>
+         
+         
+      </p>
+      <p
+        className="film-genre"
+      >
+         
+        <b>
+           Genre:
+        </b>
+         
+         
+      </p>
+      <p
+        className="film-plot"
+      >
+         
+      </p>
+    </div>
+  </article>
+  <article
+    className="results-item"
+    id="tt0432245"
+  >
+    <div
+      className="results-wrapper"
+    >
+      <img
+        className="item-poster"
+        src="N/A"
+      />
+      <div
+        className="item-info-wrapper"
+      >
+        <h3
+          className="item-title"
+        >
+          Absent Minded Inventions and the Search for Flubber with Bill Nye the Science Guy
+        </h3>
+        <p
+          className="item-year"
+        >
+          1997
+        </p>
+      </div>
+      <button
+        onClick={[Function]}
+      >
+         More 
+      </button>
+    </div>
+    <div
+      className="hide-details"
+    >
+      <p
+        className="film-runtime"
+      >
+         
+        <b>
+          Runtime:
+        </b>
+         
+         
+      </p>
+      <p
+        className="film-genre"
+      >
+         
+        <b>
+           Genre:
+        </b>
+         
+         
+      </p>
+      <p
+        className="film-plot"
+      >
+         
+      </p>
+    </div>
+  </article>
+</section>
+`;

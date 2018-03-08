@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1520436409806" clover="3.2.0">
-  <project timestamp="1520436409806" name="All files">
-    <metrics statements="7" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="2" elements="11" coveredelements="7" complexity="0" loc="7" ncloc="7" packages="2" files="2" classes="2">
+<coverage generated="1520531481461" clover="3.2.0">
+  <project timestamp="1520531481461" name="All files">
+    <metrics statements="51" coveredstatements="39" conditionals="6" coveredconditionals="2" methods="27" coveredmethods="19" elements="84" coveredelements="60" complexity="0" loc="51" ncloc="51" packages="4" files="8" classes="8">
       <package name="src">
         <metrics statements="6" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="2"/>
-        <file name="Button.js" path="/Users/olenakashuba/Documents/Learning/ConstructorLabs/react-cinema/src/Button.js">
+        <file name="Button.js" path="/home/ania/code/react-cinema/src/Button.js">
           <metrics statements="6" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="2"/>
           <line num="5" count="1" type="stmt"/>
           <line num="7" count="1" type="stmt"/>
@@ -14,11 +14,79 @@
           <line num="21" count="1" type="stmt"/>
         </file>
       </package>
+      <package name="src.components">
+        <metrics statements="31" coveredstatements="22" conditionals="6" coveredconditionals="2" methods="16" coveredmethods="11"/>
+        <file name="FilmDetails.js" path="/home/ania/code/react-cinema/src/components/FilmDetails.js">
+          <metrics statements="2" coveredstatements="2" conditionals="2" coveredconditionals="2" methods="2" coveredmethods="2"/>
+          <line num="5" count="6" type="stmt"/>
+          <line num="9" count="6" type="stmt"/>
+        </file>
+        <file name="Results.js" path="/home/ania/code/react-cinema/src/components/Results.js">
+          <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
+          <line num="6" count="2" type="stmt"/>
+          <line num="12" count="2" type="stmt"/>
+          <line num="14" count="2" type="stmt"/>
+          <line num="15" count="3" type="stmt"/>
+          <line num="25" count="2" type="stmt"/>
+        </file>
+        <file name="ResultsItem.js" path="/home/ania/code/react-cinema/src/components/ResultsItem.js">
+          <metrics statements="15" coveredstatements="6" conditionals="4" coveredconditionals="0" methods="7" coveredmethods="2"/>
+          <line num="6" count="4" type="stmt"/>
+          <line num="8" count="4" type="stmt"/>
+          <line num="13" count="4" type="stmt"/>
+          <line num="14" count="4" type="stmt"/>
+          <line num="18" count="0" type="cond" truecount="0" falsecount="2"/>
+          <line num="19" count="0" type="stmt"/>
+          <line num="21" count="0" type="cond" truecount="0" falsecount="2"/>
+          <line num="22" count="0" type="stmt"/>
+          <line num="25" count="0" type="stmt"/>
+          <line num="32" count="0" type="stmt"/>
+          <line num="33" count="0" type="stmt"/>
+          <line num="35" count="0" type="stmt"/>
+          <line num="40" count="0" type="stmt"/>
+          <line num="47" count="4" type="stmt"/>
+          <line num="49" count="4" type="stmt"/>
+        </file>
+        <file name="Search.js" path="/home/ania/code/react-cinema/src/components/Search.js">
+          <metrics statements="9" coveredstatements="9" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="4"/>
+          <line num="5" count="3" type="stmt"/>
+          <line num="7" count="3" type="stmt"/>
+          <line num="11" count="3" type="stmt"/>
+          <line num="12" count="3" type="stmt"/>
+          <line num="16" count="1" type="stmt"/>
+          <line num="22" count="1" type="stmt"/>
+          <line num="23" count="1" type="stmt"/>
+          <line num="24" count="1" type="stmt"/>
+          <line num="29" count="5" type="stmt"/>
+        </file>
+      </package>
+      <package name="src.containers">
+        <metrics statements="13" coveredstatements="12" conditionals="0" coveredconditionals="0" methods="7" coveredmethods="6"/>
+        <file name="Header.js" path="/home/ania/code/react-cinema/src/containers/Header.js">
+          <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+          <line num="3" count="1" type="stmt"/>
+          <line num="4" count="1" type="stmt"/>
+        </file>
+        <file name="Main.js" path="/home/ania/code/react-cinema/src/containers/Main.js">
+          <metrics statements="11" coveredstatements="10" conditionals="0" coveredconditionals="0" methods="6" coveredmethods="5"/>
+          <line num="7" count="2" type="stmt"/>
+          <line num="8" count="2" type="stmt"/>
+          <line num="13" count="2" type="stmt"/>
+          <line num="17" count="1" type="stmt"/>
+          <line num="18" count="1" type="stmt"/>
+          <line num="19" count="1" type="stmt"/>
+          <line num="20" count="1" type="stmt"/>
+          <line num="22" count="1" type="stmt"/>
+          <line num="25" count="1" type="stmt"/>
+          <line num="27" count="0" type="stmt"/>
+          <line num="31" count="3" type="stmt"/>
+        </file>
+      </package>
       <package name="tests">
         <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-        <file name="setup.js" path="/Users/olenakashuba/Documents/Learning/ConstructorLabs/react-cinema/tests/setup.js">
+        <file name="setup.js" path="/home/ania/code/react-cinema/tests/setup.js">
           <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-          <line num="4" count="1" type="stmt"/>
+          <line num="4" count="7" type="stmt"/>
         </file>
       </package>
     </metrics>

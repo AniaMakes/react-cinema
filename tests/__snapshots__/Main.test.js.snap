@@ -1,0 +1,48 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Main Main is rendered 1`] = `
+<div
+  className="main-content"
+>
+  <section
+    className="search-block"
+  >
+    <form
+      className="search-form"
+      onSubmit={[Function]}
+    >
+      <label
+        className="search-label"
+        htmlFor="search-input"
+      >
+        Search By Name
+      </label>
+      <div
+        className="search-bar"
+      >
+        <input
+          className="search-input"
+          id="search-input"
+          name="search-input"
+          onChange={[Function]}
+          type="text"
+          value=""
+        />
+        <button
+          className="submit-btn"
+          type="submit"
+        >
+          Find
+        </button>
+      </div>
+    </form>
+  </section>
+  <section
+    className="results"
+  >
+    <h2>
+      Results
+    </h2>
+  </section>
+</div>
+`;
