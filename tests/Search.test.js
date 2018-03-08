@@ -11,9 +11,26 @@ describe('Search input', () => {
 		}
 		const wrapper = shallow(<Search />);
 		const inputBox = wrapper.find('.search-input').simulate('change', event);
-		const outputText = wrapper.find('.search-input').instance().value
-		console.log(wrapper.find('.search-input').instance());
+		const outputText = wrapper.find('.search-input').props().value
 
 		expect(outputText).toEqual('cat');
 	})
+
+	it("calls receiver prop funciton with value state", () => {
+		const receiver = jest.fn();
+		const event = {preventDefault: jest.fn()};
+
+		const wrapper = shallow(<Search receiver={receiver}/>);
+		wrapper.setState({value: "Harry Potter"});
+		wrapper.find("form").simulate("submit", event);
+
+		expect(receiver.mock.calls).toEqual([
+			["Harry Potter"]
+		]);
+
+		expect(event.preventDefault.mock.calls).toEqual(
+			[[	]]
+		);
+	})
+
 })
